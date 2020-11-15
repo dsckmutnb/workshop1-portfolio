@@ -1,0 +1,35 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#head {
+  text-align: center;
+}
+
+#port-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 12px;
+  padding: 10px;
+}
+
+.my-card {
+  padding: 10px;
+  box-shadow: 0.5px 0.5px 3px black;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  #port-list {
+    grid-template-columns: auto;
+  }
+}
