@@ -1,5 +1,5 @@
 // Write Javascript code!
-async function main() {
+(async () => {
   const appDiv = document.getElementById("app");
   appDiv.innerHTML = `<h1 id="head">My Portfolio</h1>`;
   const portList = document.getElementById("port-list");
@@ -13,5 +13,4 @@ async function main() {
     </b><b>Lang: </b>${r.lang.map((l) => `<span class="lang">${l}</span>`)}`;
     portList.appendChild(card);
   });
-}
-main();
+})();
