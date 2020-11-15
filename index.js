@@ -7,7 +7,9 @@
   data.forEach((r) => {
     const card = document.createElement("div");
     card.className = "my-card";
-    card.innerHTML = `<img src="${r.image}" /><p><b>Project name: </b>${
+    card.innerHTML = `<img src="${
+      r.image
+    }" loading="lazy" /><p><b>Project name: </b>${
       r.title
     }</p><p><b>Description: </b>${r.description}</p>
     </b><b>Lang: </b>${r.lang.map((l) => `<span class="lang">${l}</span>`)}`;

@@ -3,10 +3,38 @@ body{
   height: 100%;
   padding: 0px;
   margin: auto;
-  background: linear-gradient(to bottom,white,#710c04)
+  background: linear-gradient(to bottom,white,#710c04);
+  color: #333;
 }
 
-img {
+.profile{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.info {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+a {
+  color: #333;
+}
+
+a:visited{
+  color: #710c04
+}
+
+.profile > img {
+  max-width: 30%;
+  border-radius: 20px;
+}
+
+.my-card > img {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -43,5 +71,17 @@ img {
 @media only screen and (max-width: 640px) {
   #port-list {
     grid-template-columns: auto;
+  }
+  .profile>img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  .profile {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .info {
+    height: auto;
   }
 }
